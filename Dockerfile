@@ -1,27 +1,22 @@
-# Etapa 1: Build do projeto usando Maven + Java 17
+# Etapa 1: Build com Maven
 FROM maven:3.9.6-eclipse-temurin-17 AS build
 WORKDIR /app
 
-# Copia os arquivos necessários para compilar
 COPY pom.xml .
 COPY src ./src
 
-# Gera o .jar (modo JVM)
 RUN mvn clean package -DskipTests
 
-# Etapa 2: Imagem final leve apenas com o Java
+# Etapa 2: Runtime com Java + estrutura completa do quarkus-app
 FROM eclipse-temurin:17-jdk-alpine
 WORKDIR /app
 
-# Copia o jar gerado pelo Quarkus (modo JVM)
+# Copia toda a estrutura do Quarkus (necessária para rodar corretamente)
 COPY --from=build /app/target/quarkus-app/ ./
-CMD ["java", "-jar", "quarkus-run.jar"]
 
-# Expõe a porta padrão usada pelo Quarkus
 EXPOSE 8080
 
-# Garante compatibilidade de rede com Render/Railway
 ENV JAVA_OPTS="-Djava.net.preferIPv4Stack=true"
 
-# Comando para rodar sua API
-CMD ["java", "-jar", "app.jar"]
+# Correto: o JAR principal agora é quarkus-run.jar
+CMD ["java", "-jar", "quarkus-run.jar"]
