@@ -1,0 +1,17 @@
+br\sistemadoacoes\dto\UsuarioDTO.class
+br\sistemadoacoes\resource\DoacaoResource.class
+br\sistemadoacoes\bo\UsuarioBO.class
+br\sistemadoacoes\model\Usuario.class
+br\sistemadoacoes\bo\OngBO.class
+br\sistemadoacoes\dto\DoacaoDTO.class
+br\sistemadoacoes\resource\OngResource.class
+br\sistemadoacoes\exception\RecursoNaoEncontradoHandler.class
+br\sistemadoacoes\bo\DoacaoBO.class
+br\sistemadoacoes\resource\StatusResource.class
+br\sistemadoacoes\model\Ong.class
+br\sistemadoacoes\dto\OngDTO.class
+META-INF\panache-archive.marker
+br\sistemadoacoes\resource\UsuarioResource.class
+br\sistemadoacoes\exception\RecursoNaoEncontradoException.class
+br\sistemadoacoes\model\Doacao.class
+br\sistemadoacoes\resource\ProfileResource.class
