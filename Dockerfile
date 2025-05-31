@@ -14,7 +14,8 @@ FROM eclipse-temurin:17-jdk-alpine
 WORKDIR /app
 
 # Copia o jar gerado pelo Quarkus (modo JVM)
-COPY --from=build /app/target/quarkus-app/quarkus-run.jar app.jar
+COPY --from=build /app/target/quarkus-app/ ./
+CMD ["java", "-jar", "quarkus-run.jar"]
 
 # Expõe a porta padrão usada pelo Quarkus
 EXPOSE 8080
