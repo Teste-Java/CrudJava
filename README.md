@@ -86,6 +86,11 @@ src/main/java/br/sistemadoacoes/
 
 ## 👨‍💻 Desenvolvedor
 
-**Madjer Henrique Finamor**  
+**Madjer Finamor**  
 🔗 [GitHub](https://github.com/MadjerFin)  
 🔗 [LinkedIn](https://www.linkedin.com/in/madjer-finamor-51196117b/)
+
+**Caio Lucas**
+
+🔗 [GitHub](https://github.com/caiolucasxz55)  
+🔗 [LinkedIn](https://www.linkedin.com/in/caio-lucas-a892b4324/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
