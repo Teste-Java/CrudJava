@@ -81,6 +81,7 @@ src/main/java/br/sistemadoacoes/
 - Toda a lógica de negócio está encapsulada na camada `bo`.
 - Exceções personalizadas tratam erros de forma elegante.
 - A API está estruturada para integração com front-end moderno (ex: Next.js).
+- Usuario e senha do banco de dados está na pasta resources, em application.properties
 
 ---
 
@@ -94,3 +95,8 @@ src/main/java/br/sistemadoacoes/
 
 🔗 [GitHub](https://github.com/caiolucasxz55)  
 🔗 [LinkedIn](https://www.linkedin.com/in/caio-lucas-a892b4324/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
+
+
+
+
+
